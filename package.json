@@ -1,0 +1,18 @@
+{
+  "name": "ebusiness",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "Yannik Daellenbach",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "parcel": "^2.0.1",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
+  }
+}
