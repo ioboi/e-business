@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.contact-form-submit {
+  @apply p-2 rounded-md bg-blue-400 text-gray-900 hover:bg-blue-500;
+}
+
+.contact-form-label {
+  @apply block font-medium mb-1;
+}
+
+.contact-form-field {
+  @apply rounded-md text-base w-full flex-1;
+}
