@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -27,12 +27,12 @@ jobs:
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.5
-      
+
       - name: Build
         run: |
           npm install
-          npm run build --public-url=https://ioboi.github.io/e-business/
-          
+          npm run build -- --public-url=https://ioboi.github.io/e-business/
+
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2.3.0
