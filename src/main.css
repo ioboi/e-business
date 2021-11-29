@@ -23,7 +23,7 @@ nav {
 }
 
 .main-content-container {
-  @apply m-auto max-w-5xl py-16 flex justify-around items-center px-4 min-h-3/4;
+  @apply m-auto max-w-5xl py-16 flex justify-around items-center px-4 min-h-screen-3/4;
 }
 
 .contact-form-submit {
