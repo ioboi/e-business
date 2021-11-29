@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 nav {
-  @apply w-full px-2 sm:px-4 flex items-center;
+  @apply w-full px-2 sm:px-4 py-2 sm:py-0 flex items-center justify-between sm:justify-items-start;
 }
 
 .logo {
-  @apply w-auto sm:w-1/5;
+  @apply w-auto sm:w-1/5 flex-initial;
 }
 
 .logo > a {
@@ -15,7 +15,7 @@ nav {
 }
 
 .nav-links-container {
-  @apply flex items-center space-x-2 sm:space-x-3;
+  @apply hidden sm:flex items-center space-x-2 sm:space-x-3;
 }
 
 .nav-links-container > a {
@@ -24,6 +24,26 @@ nav {
 
 .nav-links-container > a.current {
   @apply text-gray-900;
+}
+
+.mobile-nav {
+  @apply bg-blue-400 top-0 left-0 z-10 flex p-4 flex-col hidden;
+}
+
+#nav-toggle {
+  @apply hidden;
+}
+
+#nav-toggle:checked ~ .mobile-nav {
+  @apply flex;
+}
+
+.mobile-nav > a {
+  @apply py-4 text-gray-100 hover:text-gray-200 text-center;
+}
+
+.mobile-nav > a.current {
+  @apply font-bold;
 }
 
 .main-content-container {

@@ -13,6 +13,7 @@
       <div class="logo">
         <a
           href="index.html"
+          class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -28,11 +29,22 @@
         </a>
       </div>
       <div class="nav-links-container">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="current">Home</a>
         <a href="shop.html">Angebot</a>
-        <a href="contact.html" class="current">Kontakt</a>
+        <a href="contact.html">Kontakt</a>
       </div>
+      <label for="nav-toggle" class="sm:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </label>
     </nav>
+    <input type="checkbox" id="nav-toggle" />
+    <div class="mobile-nav">
+      <a href="index.html" class="current">Home</a>
+      <a href="shop.html">Angebot</a>
+      <a href="contact.html">Kontakt</a>
+    </div>
 
      <!-- Form -->
      <div class="max-w-3xl m-auto min-h-screen-3/4 flex items-center px-2">
