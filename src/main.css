@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 nav {
-  @apply w-full px-4 pb-2 flex;
+  @apply w-full px-4 flex;
 }
 
 .logo {

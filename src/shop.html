@@ -34,7 +34,9 @@
         <a href="contact.html">Kontakt</a>
       </div>
     </nav>
-    <div class="px-8 py-2 flex justify-around bg-blue-400">
+
+    <!-- BANNER -->
+    <div class="px-8 py-2 my-4 flex justify-around bg-green-300">
       <div class="flex items-center space-x-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -102,54 +104,222 @@
         >
       </div>
     </div>
-    <!-- Content -->
-    <div class="mt-8 px-8 flex space-x-20">
-      <!-- Categories -->
-      <div class="flex-1">
-        <h2 class="text-xl font-semibold">Bücher</h2>
-        <ul>
-          <li><a href="#">Bestseller</a></li>
-          <li><a href="#">Diese Woche neu</a></li>
-          <li><a href="#">Neuheiten</a></li>
-          <li><a href="#">SALE</a></li>
-        </ul>
-        <hr class="my-4" />
-        <h3 class="text-xl font-semibold">Buch-Kategorien</h3>
-        <ul>
-          <li><a href="#">Kategorie 1</a></li>
-          <li><a href="#">Kategorie 2</a></li>
-          <li><a href="#">Kategorie 3</a></li>
-          <li><a href="#">Kategorie 4</a></li>
-          <li><a href="#">Kategorie 5</a></li>
-          <li><a href="#">Kategorie 6</a></li>
-        </ul>
-      </div>
-      <div class="w-full">
-        <h3 class="text-4xl semi-bold mb-8">
-          Willkommen bei "Die Buchhandlung"!
-        </h3>
-        <div
-          class="w-full h-40 flex items-center justify-around mb-8 rounded-md border-dotted border-4 border-gray-300"
-        >
-          <p>HEADER IMAGE</p>
-        </div>
-        <h4 class="text-3xl mb-4">Aktuelle Bücher</h4>
-        <div class="w-full flex">
+
+    <div class="w-full pl-2 pb-4 pr-4 flex">
+      <!-- SUBNAVIGATION -->
+      <div class="w-1/5 rounded-md bg-gray-50">
+        <div class="pl-4 py-4 pr-2 flex flex-col space-y-8">
+          <div class="flex justify-between border-b-2 pb-2 text-gray-500 items-center">
+            <input placeholder="Titel, Kategorie, ..." class="py-2 bg-transparent flex-1 text-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
           <div>
-            <img class="h-60 rounded-sm mb-4" src="images/eurotrash.jpeg" />
+            <h3 class="text-2xl text-gray-800 font-semibold">Bücher</h3>
+            <ul class="text-gray-700 text-xl hover:text-gray-800">
+              <li><a href="#">Bestseller</a></li>
+              <li><a href="#">Diese Woche neu</a></li>
+              <li><a href="#">Neuheiten</a></li>
+              <li><a href="#">SALE</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-2xl text-gray-800 font-semibold">Kategorien</h3>
+            <ul class="text-gray-700 text-xl hover:text-gray-800">
+              <li><a href="#">Kategorie 1</a></li>
+              <li><a href="#">Kategorie 2</a></li>
+              <li><a href="#">Kategorie 3</a></li>
+              <li><a href="#">Kategorie 4</a></li>
+              <li><a href="#">Kategorie 5</a></li>
+              <li><a href="#">Kategorie 6</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Books -->
+      <div class="w-4/5 pl-4 flex-grow grid grid-cols-2 gap-8">
+        <!-- BOOK -->
+        <div class="flex rounded-md border-2 border-gray-50 gap-4 pr-4">
+          <img
+            src="images/eurotrash.jpeg"
+            class="w-1/3 object-cover rounded-md"
+          />
+          <div class="flex flex-col justify-between py-4">
+            <!-- INFO -->
             <div>
-              <h5 class="text-xl font-bold">EUROTRASH</h5>
-              <h6>Christian Kracht</h6>
-            </div>
-            <div>
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
+              <h4 class="text-2xl font-semibold text-gray-700">EUROTRASH</h4>
+              <h5 class="text-xl text-gray-500 mb-4">Christian Kracht</h5>
+              <ul class=" list-disc list-inside">
+                <li>Spannend!</li>
+                <li>Gut!</li>
+                <li>Interessant!</li>
               </ul>
+            </div>
+            <span class="text-xl font-bold text-green-400">CHF 31.90.-</span>
+            <button
+              class="flex space-x-4 items-center bg-blue-500 hover:bg-blue-700 p-2 text-gray-50 rounded-md"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span>In den Warenkorb</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex rounded-md border-2 border-gray-50 gap-4 pr-4">
+          <img
+            src="images/eurotrash.jpeg"
+            class="w-1/3 object-cover rounded-md"
+          />
+          <div class="flex flex-col justify-between py-4">
+            <!-- INFO -->
+            <div>
+              <h4 class="text-2xl font-semibold text-gray-700">EUROTRASH</h4>
+              <h5 class="text-xl text-gray-500 mb-4">Christian Kracht</h5>
+              <ul class=" list-disc list-inside">
+                <li>Spannend!</li>
+                <li>Gut!</li>
+                <li>Interessant!</li>
+              </ul>
+            </div>
+            <span class="text-xl font-bold text-green-400">CHF 31.90.-</span>
+            <button
+              class="flex space-x-4 items-center bg-blue-500 hover:bg-blue-700 p-2 text-gray-50 rounded-md"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span>In den Warenkorb</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex rounded-md border-2 border-gray-50 gap-4 pr-4">
+          <img
+            src="images/eurotrash.jpeg"
+            class="w-1/3 object-cover rounded-md"
+          />
+          <div class="flex flex-col justify-between py-4">
+            <!-- INFO -->
+            <div>
+              <h4 class="text-2xl font-semibold text-gray-700">EUROTRASH</h4>
+              <h5 class="text-xl text-gray-500 mb-4">Christian Kracht</h5>
+              <ul class=" list-disc list-inside">
+                <li>Spannend!</li>
+                <li>Gut!</li>
+                <li>Interessant!</li>
+              </ul>
+            </div>
+            <span class="text-xl font-bold text-green-400">CHF 31.90.-</span>
+            <button
+              class="flex space-x-4 items-center bg-blue-500 hover:bg-blue-700 p-2 text-gray-50 rounded-md"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span>In den Warenkorb</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-8 border-dotted border-t-2 px-4">
+      <div class="mx-auto max-w-5xl flex justify-between">
+        <div>
+          <h3 class="semi-bold text-xl pb-2">Kontakt</h3>
+          <!-- Phone -->
+          <div class="flex flex-row items-center space-x-3 mb-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-blue-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              />
+            </svg>
+            <div class="flex flex-col">
+              <span>Telefon:</span>
+              <span>+41 123 123 12 12</span>
+            </div>
+          </div>
+          <!--MAIL-->
+          <div class="flex flex-row items-center space-x-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            </svg>
+            <div class="flex flex-col">
+              <span>E-Mail:</span>
+              <span
+                ><a href="mailto:example@example.com"
+                  >example@example.com</a
+                ></span
+              >
             </div>
           </div>
         </div>
+        <div>
+          <h3 class="semi-bold text-xl pb-2">Folgen</h3>
+          <div class="flex space-x-3">
+            <a href="#" class="w-8 h-8">
+              <img src="./images/facebook.svg" />
+            </a>
+            <a href="#" class="w-8 h-8">
+              <img src="./images/twitter.svg" />
+            </a>
+            <a href="#" class="w-8 h-8">
+              <img src="./images/instagram.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4 w-full">
+        <span class="text-gray-600 font-light"
+          >© 2021 - Die Buchhandlung - Hochschulstrasse 6 - 3012 Bern</span
+        >
       </div>
     </div>
   </body>
