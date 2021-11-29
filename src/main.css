@@ -23,11 +23,11 @@ nav {
 }
 
 .main-content-container {
-  @apply m-auto max-w-5xl py-16 flex justify-around items-center px-4;
+  @apply m-auto max-w-5xl py-16 flex justify-around items-center px-4 min-h-3/4;
 }
 
 .contact-form-submit {
-  @apply p-2 rounded-md bg-blue-500 text-gray-900 hover:bg-blue-700;
+  @apply py-2 px-4 bg-blue-500 text-gray-200 hover:bg-blue-700;
 }
 
 .contact-form-label {
