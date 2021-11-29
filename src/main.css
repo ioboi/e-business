@@ -2,8 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+nav {
+  @apply w-full px-4 pb-2 flex;
+}
+
+.logo {
+  @apply w-1/5;
+}
+
+.nav-links-container {
+  @apply flex items-center space-x-3;
+}
+
+.nav-links-container > a {
+  @apply py-5 px-3 text-gray-600 hover:text-gray-900 font-semibold;
+}
+
+.nav-links-container > a.current {
+  @apply text-gray-900;
+}
+
 .contact-form-submit {
-  @apply p-2 rounded-md bg-blue-400 text-gray-900 hover:bg-blue-500;
+  @apply p-2 rounded-md bg-blue-500 text-gray-900 hover:bg-blue-700;
 }
 
 .contact-form-label {
