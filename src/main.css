@@ -22,6 +22,10 @@ nav {
   @apply text-gray-900;
 }
 
+.main-content-container {
+  @apply m-auto max-w-5xl py-16 flex justify-around items-center px-4;
+}
+
 .contact-form-submit {
   @apply p-2 rounded-md bg-blue-500 text-gray-900 hover:bg-blue-700;
 }
