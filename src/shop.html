@@ -36,7 +36,7 @@
     </nav>
 
     <!-- BANNER -->
-    <div class="px-8 py-2 my-4 flex justify-around bg-green-300">
+    <div class="px-8 py-2 my-4 sm:flex justify-around bg-green-300 hidden sm:block">
       <div class="flex items-center space-x-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -105,9 +105,9 @@
       </div>
     </div>
 
-    <div class="w-full pl-2 pb-4 pr-4 flex">
+    <div class="w-full pl-2 pb-4 pr-4 flex flex-col sm:flex-row">
       <!-- SUBNAVIGATION -->
-      <div class="w-1/5 rounded-md bg-gray-50">
+      <div class="w-1/5 rounded-md bg-gray-50 hidden sm:block">
         <div class="pl-4 py-4 pr-2 flex flex-col space-y-8">
           <div class="flex justify-between border-b-2 pb-2 text-gray-500 items-center">
             <input placeholder="Titel, Kategorie, ..." class="py-2 bg-transparent flex-1 text-xl">
@@ -137,8 +137,51 @@
           </div>
         </div>
       </div>
+
+      <div class="sm:hidden mb-2 px-2">
+        <div class="flex justify-between border-b-2 pb-2 text-gray-500 items-center">
+          <input placeholder="Titel, Kategorie, ..." class="py-2 bg-transparent flex-1 text-xl">
+          <div class="flex">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <div>
+              <label for="category-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z" />
+              </svg>
+            </label>
+            </div>
+          </div>
+        </div>
+        <input type="checkbox" id="category-toggle" >
+        <div class="shop-categories">
+          <div class="px-2 py-4 mb-2 flex flex-col space-y-8">
+            <div>
+              <h3 class="text-2xl text-gray-800 font-semibold">Bücher</h3>
+              <ul class="text-gray-700 text-xl hover:text-gray-800">
+                <li><a href="#">Bestseller</a></li>
+                <li><a href="#">Diese Woche neu</a></li>
+                <li><a href="#">Neuheiten</a></li>
+                <li><a href="#">SALE</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-2xl text-gray-800 font-semibold">Kategorien</h3>
+              <ul class="text-gray-700 text-xl hover:text-gray-800">
+                <li><a href="#">Kategorie 1</a></li>
+                <li><a href="#">Kategorie 2</a></li>
+                <li><a href="#">Kategorie 3</a></li>
+                <li><a href="#">Kategorie 4</a></li>
+                <li><a href="#">Kategorie 5</a></li>
+                <li><a href="#">Kategorie 6</a></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+
       <!-- Books -->
-      <div class="w-4/5 pl-4 flex-grow grid grid-cols-2 gap-8">
+      <div class="w-full sm:w-4/5 pl-2 sm:pl-4 flex-grow grid grid-cols-1 sm:grid-cols-2 gap-8">
         <!-- BOOK -->
         <div class="flex rounded-md border-2 border-gray-50 gap-4 pr-4">
           <img
@@ -177,6 +220,7 @@
               <span>In den Warenkorb</span>
             </button>
           </div>
+        
         </div>
 
         <div class="flex rounded-md border-2 border-gray-50 gap-4 pr-4">

@@ -3,19 +3,23 @@
 @tailwind utilities;
 
 nav {
-  @apply w-full px-4 flex;
+  @apply w-full px-2 sm:px-4 flex items-center;
 }
 
 .logo {
-  @apply w-1/5;
+  @apply w-auto sm:w-1/5;
+}
+
+.logo > a {
+  @apply flex items-center py-2 sm:py-5 sm:px-2 text-gray-700 hover:text-gray-900;
 }
 
 .nav-links-container {
-  @apply flex items-center space-x-3;
+  @apply flex items-center space-x-2 sm:space-x-3;
 }
 
 .nav-links-container > a {
-  @apply py-5 px-3 text-gray-600 hover:text-gray-900 font-semibold;
+  @apply py-5 sm:px-3 text-gray-600 hover:text-gray-900 font-semibold;
 }
 
 .nav-links-container > a.current {
@@ -23,7 +27,19 @@ nav {
 }
 
 .main-content-container {
-  @apply m-auto max-w-5xl py-16 flex justify-around items-center px-4 min-h-screen-3/4;
+  @apply m-auto max-w-5xl py-4 sm:py-16 flex sm:flex-row flex-col-reverse justify-around items-center px-2 sm:px-4 min-h-screen-3/4;
+}
+
+.shop-categories {
+  @apply w-full rounded-md bg-gray-50 sm:block hidden;
+}
+
+#category-toggle {
+  @apply hidden;
+}
+
+#category-toggle:checked ~ .shop-categories {
+  @apply block;
 }
 
 .contact-form-submit {
