@@ -3,24 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Die Buchhandlung</title>
+    <title>Die Buchhandlung - Shop</title>
     <link rel="stylesheet" href="main.css" />
-    <!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://e-business.matomo.cloud/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='//cdn.matomo.cloud/e-business.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
 
+    <!-- Open Graph -->
+    <meta
+      property="og:url"
+      content="https://ioboi.github.io/e-business/shop.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bücher bestellen, einfach online." />
+    <meta property="og:description" content="Lorem ipsum." />
+    <meta property="og:image" content="images/placeholder.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="Lorem ipsum." />
+    <meta name="twitter:site" content="@DieBuchhandlung" />
+
+    <!-- Matomo -->
+    <script>
+      var _paq = (window._paq = window._paq || []);
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+      (function () {
+        var u = "https://e-business.matomo.cloud/";
+        _paq.push(["setTrackerUrl", u + "matomo.php"]);
+        _paq.push(["setSiteId", "1"]);
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.async = true;
+        g.src = "//cdn.matomo.cloud/e-business.matomo.cloud/matomo.js";
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
   </head>
   <body>
     <!-- Navigation -->
@@ -50,8 +68,19 @@
         <a href="contact.html">Kontakt</a>
       </div>
       <label for="nav-toggle" class="sm:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
         </svg>
       </label>
     </nav>
@@ -63,7 +92,9 @@
     </div>
 
     <!-- BANNER -->
-    <div class="px-8 py-2 my-4 sm:flex justify-around bg-green-300 hidden sm:block">
+    <div
+      class="px-8 py-2 my-4 sm:flex justify-around bg-green-300 hidden sm:block"
+    >
       <div class="flex items-center space-x-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -136,10 +167,26 @@
       <!-- SUBNAVIGATION -->
       <div class="w-1/5 rounded-md bg-gray-50 hidden sm:block">
         <div class="pl-4 py-4 pr-2 flex flex-col space-y-8">
-          <div class="flex justify-between border-b-2 pb-2 text-gray-500 items-center">
-            <input placeholder="Titel, Kategorie, ..." class="py-2 bg-transparent flex-1 text-xl">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          <div
+            class="flex justify-between border-b-2 pb-2 text-gray-500 items-center"
+          >
+            <input
+              placeholder="Titel, Kategorie, ..."
+              class="py-2 bg-transparent flex-1 text-xl"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 mx-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
             </svg>
           </div>
           <div>
@@ -166,22 +213,49 @@
       </div>
 
       <div class="px-2 sm:hidden">
-        <div class="flex justify-between border-b-2 pb-2 text-gray-500 items-center ">
-          <input placeholder="Titel, Kategorie, ..." class="py-2 bg-transparent flex-1 text-xl">
+        <div
+          class="flex justify-between border-b-2 pb-2 text-gray-500 items-center"
+        >
+          <input
+            placeholder="Titel, Kategorie, ..."
+            class="py-2 bg-transparent flex-1 text-xl"
+          />
           <div class="flex">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 mx-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
             </svg>
             <div>
               <label for="category-toggle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z" />
-              </svg>
-            </label>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 block"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"
+                  />
+                </svg>
+              </label>
             </div>
           </div>
         </div>
-        <input type="checkbox" id="category-toggle" >
+        <input type="checkbox" id="category-toggle" />
         <div class="shop-categories">
           <div class="px-2 py-4 mb-2 flex flex-col space-y-8">
             <div>
@@ -205,131 +279,127 @@
               </ul>
             </div>
           </div>
-      </div>
-
-      
-    </div>
-    <!-- Books -->
-    <div class="w-full sm:w-4/5 pl-2 sm:pl-4 flex-grow grid grid-cols-1 sm:grid-cols-2 gap-8">
-      <!-- BOOK -->
-      <div class="flex rounded-md border-2 border-gray-50 gap-4 pr-4">
-        <img
-          src="images/eurotrash.jpeg"
-          class="w-1/3 object-cover rounded-md"
-        />
-        <div class="flex flex-col justify-between py-4">
-          <!-- INFO -->
-          <div>
-            <h4 class="text-2xl font-semibold text-gray-700">EUROTRASH</h4>
-            <h5 class="text-xl text-gray-500 mb-4">Christian Kracht</h5>
-            <ul class=" list-disc list-inside">
-              <li>Spannend!</li>
-              <li>Gut!</li>
-              <li>Interessant!</li>
-            </ul>
-          </div>
-          <span class="text-xl font-bold text-green-400">CHF 31.90.-</span>
-          <button
-            class="flex space-x-4 items-center bg-blue-500 hover:bg-blue-700 p-2 text-gray-50 rounded-md"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-              />
-            </svg>
-            <span>In den Warenkorb</span>
-          </button>
-        </div>
-      
-      </div>
-
-      <div class="flex rounded-md border-2 border-gray-50 gap-4 pr-4">
-        <img
-          src="images/dieenkelin.jpg"
-          class="w-1/3 object-cover rounded-md"
-        />
-        <div class="flex flex-col justify-between py-4">
-          <!-- INFO -->
-          <div>
-            <h4 class="text-2xl font-semibold text-gray-700">Die Enkelin</h4>
-            <h5 class="text-xl text-gray-500 mb-4">Bernhard Schlink</h5>
-            <ul class=" list-disc list-inside">
-              <li>Spannend!</li>
-              <li>Gut!</li>
-              <li>Interessant!</li>
-            </ul>
-          </div>
-          <span class="text-xl font-bold text-green-400">CHF 26.80.-</span>
-          <button
-            class="flex space-x-4 items-center bg-blue-500 hover:bg-blue-700 p-2 text-gray-50 rounded-md"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-              />
-            </svg>
-            <span>In den Warenkorb</span>
-          </button>
         </div>
       </div>
-
-      <div class="flex rounded-md border-2 border-gray-50 gap-4 pr-4">
-        <img
-          src="images/reigen.jpg"
-          class="w-1/3 object-cover rounded-md"
-        />
-        <div class="flex flex-col justify-between py-4">
-          <!-- INFO -->
-          <div>
-            <h4 class="text-2xl font-semibold text-gray-700">REIGEN</h4>
-            <h5 class="text-xl text-gray-500 mb-4">Arthur Schnitzler</h5>
-            <ul class=" list-disc list-inside">
-              <li>Spannend!</li>
-              <li>Gut!</li>
-              <li>Interessant!</li>
-            </ul>
-          </div>
-          <span class="text-xl font-bold text-green-400">CHF 6.00.-</span>
-          <button
-            class="flex space-x-4 items-center bg-blue-500 hover:bg-blue-700 p-2 text-gray-50 rounded-md"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+      <!-- Books -->
+      <div
+        class="w-full sm:w-4/5 pl-2 sm:pl-4 flex-grow grid grid-cols-1 sm:grid-cols-2 gap-8"
+      >
+        <!-- BOOK -->
+        <div class="flex rounded-md border-2 border-gray-50 gap-4 pr-4">
+          <img
+            src="images/eurotrash.jpeg"
+            class="w-1/3 object-cover rounded-md"
+          />
+          <div class="flex flex-col justify-between py-4">
+            <!-- INFO -->
+            <div>
+              <h4 class="text-2xl font-semibold text-gray-700">EUROTRASH</h4>
+              <h5 class="text-xl text-gray-500 mb-4">Christian Kracht</h5>
+              <ul class="list-disc list-inside">
+                <li>Spannend!</li>
+                <li>Gut!</li>
+                <li>Interessant!</li>
+              </ul>
+            </div>
+            <span class="text-xl font-bold text-green-400">CHF 31.90.-</span>
+            <button
+              class="flex space-x-4 items-center bg-blue-500 hover:bg-blue-700 p-2 text-gray-50 rounded-md"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-              />
-            </svg>
-            <span>In den Warenkorb</span>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span>In den Warenkorb</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex rounded-md border-2 border-gray-50 gap-4 pr-4">
+          <img
+            src="images/dieenkelin.jpg"
+            class="w-1/3 object-cover rounded-md"
+          />
+          <div class="flex flex-col justify-between py-4">
+            <!-- INFO -->
+            <div>
+              <h4 class="text-2xl font-semibold text-gray-700">Die Enkelin</h4>
+              <h5 class="text-xl text-gray-500 mb-4">Bernhard Schlink</h5>
+              <ul class="list-disc list-inside">
+                <li>Spannend!</li>
+                <li>Gut!</li>
+                <li>Interessant!</li>
+              </ul>
+            </div>
+            <span class="text-xl font-bold text-green-400">CHF 26.80.-</span>
+            <button
+              class="flex space-x-4 items-center bg-blue-500 hover:bg-blue-700 p-2 text-gray-50 rounded-md"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span>In den Warenkorb</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex rounded-md border-2 border-gray-50 gap-4 pr-4">
+          <img src="images/reigen.jpg" class="w-1/3 object-cover rounded-md" />
+          <div class="flex flex-col justify-between py-4">
+            <!-- INFO -->
+            <div>
+              <h4 class="text-2xl font-semibold text-gray-700">REIGEN</h4>
+              <h5 class="text-xl text-gray-500 mb-4">Arthur Schnitzler</h5>
+              <ul class="list-disc list-inside">
+                <li>Spannend!</li>
+                <li>Gut!</li>
+                <li>Interessant!</li>
+              </ul>
+            </div>
+            <span class="text-xl font-bold text-green-400">CHF 6.00.-</span>
+            <button
+              class="flex space-x-4 items-center bg-blue-500 hover:bg-blue-700 p-2 text-gray-50 rounded-md"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+              <span>In den Warenkorb</span>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
     </div>
 
     <div class="pt-8 border-dotted border-t-2 px-4">
@@ -359,9 +429,19 @@
           </div>
           <!--MAIL-->
           <div class="flex flex-row items-center space-x-3">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-blue-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
             </svg>
             <div class="flex flex-col">
               <span>E-Mail:</span>
